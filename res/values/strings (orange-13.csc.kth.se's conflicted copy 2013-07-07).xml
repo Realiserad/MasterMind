@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MasterMind</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="game_settings_title">Game settings</string>
+    <string name="allow_empty_pegs_summary">Allow empty peg holes in the secret pattern. An empty peg hole may be considered as an extra color.</string>
+    <string name="allow_empty_pegs_title">Allow empty peg holes</string>
+    <string name="number_of_pegs_dialog_message">Please select the number of pegs</string>
+    <string name="number_of_pegs_summary">Specify the length of the secret pattern. A longer pattern will usually be harder to crack.</string>
+    <string name="number_of_pegs_title">Number of pegs</string>
+    <string name="number_of_guesses_dialog_message">Please select the number of guesses</string>
+    <string name="number_of_guesses_summary">Specify the maximum number of guesses before the board locks. Set this option to zero for an unlimited number of guesses.</string>
+    <string name="number_of_guesses_title">Number of guesses</string>
+    <string name="enabled_pegs_summary">Enable or disable peg colors.</string>
+    <string name="enabled_pegs_title">Peg colors</string>
+    <string name="black_enabled_summary">Check to enable the black peg.</string>
+    <string name="black_enabled_title">Black</string>
+    <string name="lilac_enabled_summary">Check to enable the lilac peg.</string>
+    <string name="lilac_enabled_title">Lilac</string>
+    <string name="blue_enabled_summary">Check to enable the blue peg.</string>
+    <string name="blue_enabled_title">Blue</string>
+    <string name="green_enabled_summary">Check to enable the green peg.</string>
+    <string name="green_enabled_title">Green</string>
+    <string name="brown_enabled_summary">Check to enable the brown peg.</string>
+    <string name="brown_enabled_title">Brown</string>
+    <string name="yellow_enabled_summary">Check to enable the yellow peg.</string>
+    <string name="yellow_enabled_title">Yellow</string>
+    <string name="red_enabled_summary">Check to enable the red peg.</string>
+    <string name="red_enabled_title">Red</string>
+    <string name="orange_enabled_summary">Check to enable the orange peg.</string>
+    <string name="orange_enabled_title">Orange</string>
+    <string name="pink_enabled_summary">Check to enable the pink peg.</string>
+    <string name="pink_enabled_title">Pink</string>
+    <string name="white_enabled_summary">Check to enable the white peg.</string>
+    <string name="white_enabled_title">White</string>
+    <string name="lime_enabled_summary">Check to enable the lime peg.</string>
+    <string name="lime_enabled_title">Lime</string>
+    <string name="timer_enabled_title">Chronometer</string>
+    <string name="timer_enabled_summary">Display a timer when playing.</string>
+    <string name="autocomplete_title">Autocomplete</string>
+    <string name="autocomplete_summary">Automatically start on a new row when the last peg has been set. Disable this option if you want to be able to preview your guess.</string>
+    <string name="black_peg_content_description">Black colored peg</string>
+    <string name="lilac_peg_content_description">Lilac colored peg</string>
+    <string name="blue_peg_content_description">Blue colored peg</string>
+    <string name="green_peg_content_description">Green colored peg</string>
+    <string name="brown_peg_content_description">Brown colored peg</string>
+    <string name="yellow_peg_content_description">Yellow colored peg</string>
+    <string name="red_peg_content_description">Red colored peg</string>
+    <string name="pink_peg_content_description">Pink colored peg</string>
+    <string name="lime_peg_content_description">Lime colored peg</string>
+    <string name="orange_peg_content_description">Orange colored peg</string>
+    <string name="white_peg_content_description">White colored peg</string>
+    <string name="empty_peg_content_description">Empty peg hole</string>
+    <string name="solve_content_description">Reveal the secret pattern</string>
+    <string name="timer_content_description">Start or stop the timer</string>
+    <string name="trash_can">Remove the last peg set</string>
+
+</resources>

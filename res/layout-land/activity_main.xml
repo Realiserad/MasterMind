@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/guesses_scroll_view_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/guesses_scroll_view"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgrepeat" >
+
+            <LinearLayout
+                android:id="@+id/guesses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgrepeat"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/peg_picker_bgrepeat_land"
+            android:paddingRight="9dp"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:id="@+id/peg_picker_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/peg_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/picker_black_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/black_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_black_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_lilac_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/lilac_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_lilac_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_blue_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/blue_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_blue_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_green_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/green_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_green_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_brown_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/brown_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_brown_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_yellow_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/yellow_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_yellow_peg_land" />
+
+                    <ImageView
+                        android:id="@+id/picker_red_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/red_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_red_peg_land" />
+                    
+                    <ImageView
+                        android:id="@+id/picker_pink_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pink_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_pink_peg_land" />
+                    
+                    <ImageView
+                        android:id="@+id/picker_orange_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/orange_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_orange_peg_land" />
+                    
+                    <ImageView
+                        android:id="@+id/picker_lime_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/lime_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_lime_peg_land" />
+                    
+                    <ImageView
+                        android:id="@+id/picker_white_peg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/white_peg_content_description"
+                        android:onClick="setPeg"
+                        android:src="@drawable/picker_white_peg_land" />
+                </LinearLayout>
+            </ScrollView>
+            <ImageView android:id="@+id/trash_can"
+                android:contentDescription="@string/trash_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trash_can"
+                android:onClick="undoPeg" />
+            <LinearLayout 
+                android:id="@+id/thread"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/thread_land">
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kth="http://mastermind.bastianf.nada.kth.se"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory
+        android:key="game_settings"
+        android:title="Game settings" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="allow_empty_pegs"
+            android:summary="@string/allow_empty_pegs_summary"
+            android:title="@string/allow_empty_pegs_title" />
+
+        <se.kth.nada.bastianf.mastermind.NumberPickerPreference
+            android:defaultValue="4"
+            android:dialogMessage="@string/number_of_pegs_dialog_message"
+            android:key="number_of_pegs"
+            android:max="6"
+            android:summary="@string/number_of_pegs_summary"
+            android:title="@string/number_of_pegs_title"
+            kth:min="3" />
+
+        <se.kth.nada.bastianf.mastermind.NumberPickerPreference
+            android:defaultValue="12"
+            android:dialogMessage="@string/number_of_guesses_dialog_message"
+            android:key="number_of_guesses"
+            android:max="25"
+            android:summary="@string/number_of_guesses_summary"
+            android:title="@string/number_of_guesses_title"
+            kth:min="0" />
+
+        <PreferenceScreen
+            android:key="enabled_pegs"
+            android:persistent="false"
+            android:summary="@string/enabled_pegs_summary"
+            android:title="@string/enabled_pegs_title" >
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="black_enabled"
+                android:summary="@string/black_enabled_summary"
+                android:title="@string/black_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="lilac_enabled"
+                android:summary="@string/lilac_enabled_summary"
+                android:title="@string/lilac_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="blue_enabled"
+                android:summary="@string/blue_enabled_summary"
+                android:title="@string/blue_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="green_enabled"
+                android:summary="@string/green_enabled_summary"
+                android:title="@string/green_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="brown_enabled"
+                android:summary="@string/brown_enabled_summary"
+                android:title="@string/brown_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="yellow_enabled"
+                android:summary="@string/yellow_enabled_summary"
+                android:title="@string/yellow_enabled_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="red_enabled"
+                android:summary="@string/red_enabled_summary"
+                android:title="@string/red_enabled_title" />
+            
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="white_enabled"
+                android:summary="@string/white_enabled_summary"
+                android:title="@string/white_enabled_title" />
+            
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="lime_enabled"
+                android:summary="@string/lime_enabled_summary"
+                android:title="@string/lime_enabled_title" />
+            
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="orange_enabled"
+                android:summary="@string/orange_enabled_summary"
+                android:title="@string/orange_enabled_title" />
+            
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="pink_enabled"
+                android:summary="@string/pink_enabled_summary"
+                android:title="@string/pink_enabled_title" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="user_interface"
+        android:title="User interface" >
+
+        <CheckBoxPreference android:key="timer_enabled"
+            android:title="@string/timer_enabled_title"
+            android:summary="@string/timer_enabled_summary" />
+        
+        <CheckBoxPreference android:key="autocomplete"
+            android:title="@string/autocomplete_title"
+            android:summary="@string/autocomplete_summary" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
